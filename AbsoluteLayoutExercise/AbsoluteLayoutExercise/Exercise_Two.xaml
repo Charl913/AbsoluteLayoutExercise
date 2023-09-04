@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AbsoluteLayoutExercise.Exercise_Two">
+    <AbsoluteLayout>
+        <Image Source="https://pixabay.com/get/g29d9d9bd58116c779c0f43fd80bfde90a21702a4396049bbb6835c41cc6b269cf3cd6b020b57edd479f2e729caa360ccd3c37d7f705291be0e46ea533853715c_1280.jpg"
+               Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0,0,1,1"
+               AbsoluteLayout.LayoutFlags="All"/>
+        <StackLayout AbsoluteLayout.LayoutBounds="1,0,1,0.2"
+                     AbsoluteLayout.LayoutFlags="All"
+                     HorizontalOptions="Center">
+            <Label Text="Relax"
+                   TextColor="White"
+                   FontSize="30"/>
+        </StackLayout>
+        <BoxView AbsoluteLayout.LayoutBounds="0,1,1,100"
+                 AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"
+                 BackgroundColor="Black"
+                 Opacity="0.5"/>
+        <StackLayout AbsoluteLayout.LayoutBounds="0,1,1,100"
+                     AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"
+                     Orientation="Horizontal"
+                     VerticalOptions="Center"
+                     Padding="30,0">
+            <Label Text="Profile"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   FontSize="15"/>
+            <Label Text="Mediate"
+                   TextColor="White"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="15"/>
+            <Label Text="Themes"
+                   TextColor="White"
+                   FontSize="15"/>
+        </StackLayout>
+    </AbsoluteLayout>
+    
+</ContentPage>
