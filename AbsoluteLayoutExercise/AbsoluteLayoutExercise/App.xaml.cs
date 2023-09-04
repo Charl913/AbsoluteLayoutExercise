@@ -10,7 +10,7 @@ namespace AbsoluteLayoutExercise
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Exercise_One();
         }
 
         protected override void OnStart()
